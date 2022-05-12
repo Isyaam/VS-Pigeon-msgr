@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.msgr.client.controllers.GroupController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-1.0" prefHeight="614.0" prefWidth="425.0" spacing="15.0">
+         <children>
+            <Label text="Gruppe erstellen">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="75.0" prefWidth="518.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="100.0" text="Gruppen Name">
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" top="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="createNewGroupName" alignment="CENTER" prefHeight="26.0" prefWidth="194.0" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="70.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="47.0" prefWidth="100.0" text="Nach Benutzer &#10;suchen:">
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <VBox prefHeight="70.0" prefWidth="195.0">
+                     <children>
+                        <TextField fx:id="searchBoxGroup" prefHeight="26.0" prefWidth="170.0" promptText="Suchen..." VBox.vgrow="NEVER">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label text="eigene Kontakte:">
+               <VBox.margin>
+                  <Insets bottom="-10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ListView fx:id="findContactGroup" prefHeight="100.0" prefWidth="334.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </ListView>
+            <Label text="ausgewählte Benutzer:" />
+            <ListView fx:id="allUsersGroup" prefHeight="143.0" prefWidth="574.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </ListView>
+            <Button mnemonicParsing="false" onAction="#createGroup" text="Gruppe erstellen">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -11,7 +11,7 @@ Das Programm kann durch einen einzigen Befehl und kompiliert und sofort gestarte
 
 Christophe Biwer (yoshegg)
 
-Jens Kolz (Stack)
+Jens Kolz (Isyaam)
 
 Nadine Warneke (Warneke)
 
